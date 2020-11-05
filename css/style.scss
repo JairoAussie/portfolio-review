@@ -49,6 +49,17 @@ header{
     }
 }
 
+.training-option{
+    @include header-footer();
+    align-items: center;
+    img{
+        width: 250px;
+    }
+    h3{
+        color: $primary-color;
+    }
+}
+
 footer{
     @include header-footer();
 }
