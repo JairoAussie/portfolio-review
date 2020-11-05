@@ -6,7 +6,10 @@ div{
     margin: 5px;
     padding: 5px;
 }
-
+body{
+    background-color: $primary-color;
+    margin: 0px;
+}
 @mixin header-footer{
     background-color: $secondary-color;
     display: flex;
@@ -63,3 +66,4 @@ header{
 footer{
     @include header-footer();
 }
+
