@@ -1,0 +1,27 @@
+$primary-color: #2b78e4;
+$secondary-color: #ff9900;
+//paint one border to all divs just for help in the design
+div{
+    border: solid black 1px;
+    margin: 5px;
+    padding: 5px;
+}
+
+@mixin header-footer{
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    @include header-footer();
+    align-items: center;
+    h1{
+        color: $primary-color;
+    }
+}
+
+footer{
+    @include header-footer();
+}
