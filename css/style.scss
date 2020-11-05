@@ -2,7 +2,7 @@ $primary-color: #2b78e4;
 $secondary-color: #ff9900;
 //paint one border to all divs just for help in the design
 div{
-    border: solid black 1px;
+    //border: solid black 1px;
     margin: 5px;
     padding: 5px;
 }
@@ -19,6 +19,33 @@ header{
     align-items: center;
     h1{
         color: $primary-color;
+        margin: 2px;
+    }
+}
+
+.logo{
+    background-color: $primary-color;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 80px;
+    }
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        margin: 2px;
     }
 }
 
